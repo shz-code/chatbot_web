@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="main">
+    <div class="prev_chats">
+        <div class="bot">
+            <p> Hi I'm CSE bot. What's up </p>
+        </div>
+        <div class="user">
+            <p>ok</p>
+        </div>
+    </div>
+    <form id="chat_form" class="unselectable">
+        {% csrf_token %}
+        <div class="input_control">
+            <div class="row">
+                <input type="text" id="input_box" placeholder="Chat with me">
+                <i class='bx bx-microphone' id="mic_toggle">
+                    <span class="mic_msg">Click here to Turn on Microphone</span>
+                </i>
+            </div>
+            <div class="mic_warning"> </div>
+            <button class="btn">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock body %}
+

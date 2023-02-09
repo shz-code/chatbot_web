@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+/env/
+*/db.sqlite3
+__pycache__
+migrations
+.env
+data.pth

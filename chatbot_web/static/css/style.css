@@ -1,0 +1,106 @@
+:root{
+    --primary-color: black;
+    --body-bg: rgb(14, 92, 92);
+    --primary-bg: rgb(105, 105, 105);
+    --text-primary: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background: var(--body-bg);
+    color: var(--text-primary);
+}
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+.main{
+    width: 100%;
+    margin-top: 100px;
+    background: var(--primary-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.prev_chats{
+    padding: 1rem 0.5rem;
+    background: #000;
+    display: grid;
+    row-gap: 1rem;
+}
+.prev_chats .bot,.user{
+    padding: 0.5rem;
+    background: red;
+    border-radius: 0.5rem;
+    max-width: 70%;
+}
+.prev_chats .bot{
+    justify-self: flex-start;
+    background: red;
+}
+.prev_chats .user{
+    justify-self: flex-end;
+    background: gray;
+}
+form{
+    background: green;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+form .row{
+    display: flex;
+    position: relative;
+}
+form .row input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+form .row input:focus{
+    outline: none;
+}
+form .row i{
+    position: absolute;
+    color: darkblue;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: rebeccapurple;
+    border-radius: 0 0.2rem 0.2rem 0;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+form .row i span{
+    position: absolute;
+    top: -2.5rem;
+    right: -5rem;
+    font-size: smaller;
+    width: 210px;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background: wheat;
+    color: black;
+    display: none;
+}
+form .row i:hover span{
+    display: block;
+}
+form .mic_warning{
+    margin: 1rem 0;
+}
+form .btn{
+    background: gainsboro;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
