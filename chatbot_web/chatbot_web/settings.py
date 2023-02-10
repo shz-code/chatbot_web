@@ -8,7 +8,7 @@ SECRET_KEY = os.getenv("SECRET_KEY",default="unsafe-secret-key")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -99,6 +99,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [ BASE_DIR / 'static' ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Default primary key field type
