@@ -7,14 +7,21 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     display: flex;
-    max-width: 600px;
+    flex-direction: column;
+    max-width: 800px;
     width: 100%;
     margin: auto;
+    margin-top: 100px;
     background: var(--body-bg);
     color: var(--text-primary);
+}
+h1{
+    text-align: center;
+    margin: 1rem;
 }
 .unselectable {
     -webkit-user-select: none;
@@ -25,7 +32,6 @@ body{
  }
 .main{
     width: 100%;
-    margin-top: 100px;
     background: var(--primary-bg);
     padding: 2rem;
     border-radius: 0.5rem;
@@ -103,4 +109,9 @@ form .btn{
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+footer{
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
 }

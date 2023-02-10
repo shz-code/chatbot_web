@@ -27,7 +27,7 @@ const chatFetch = (msg) =>{
             'Content-Type' : 'application/json',
             'X-CSRFToken' : csrf,
         },
-        body:JSON.stringify({'msg' : msg})
+        body:JSON.stringify({'msg' : msg,'username' : username})
         })
         .then(async(response) => {
             let res = await response.json();
