@@ -22,19 +22,7 @@
         </div>
     </form>
 </div>
+{% include "./footer.html" %}
 {% endblock body %}
-{% block scripts %}
-<script>
-    let username;
-    if(localStorage.getItem("user") === null)
-    {
-        username = prompt("What is your name?");
-        localStorage.setItem("user",username);
-    }
-    else username = localStorage.getItem("user");
-    document.querySelector(".user_welcome").innerHTML = `Welcome ${username.toUpperCase()}`
-    document.querySelector(".greetings").innerHTML = `Hi ${username.toUpperCase()}. I am a under development chatbot of CSE depertment of IUBAT.` 
-</script>
-{% endblock scripts %}
 
 

@@ -9,14 +9,17 @@
 		"width=device-width, initial-scale=1.0">
 	<title>Chatbot</title>
 
+	{% comment %} Vendor css  {% endcomment %}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	
+	{% comment %} App Css  {% endcomment %}
     <link rel="stylesheet" href={% static 'css/style.css' %}>
 </head>
 
 <body>
 	{% block body %}{% endblock body %}
 	
-    {% include "./footer.html" %}
 	{% block scripts %}{% endblock scripts %}
     {% include "./scripts.html" %}
+</body>
 </html>
